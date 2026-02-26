@@ -1,18 +1,7 @@
 import { motion } from "framer-motion";
-
-const SteamEffect = () => (
-  <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex gap-3 pointer-events-none">
-    {[0, 0.3, 0.6, 0.9].map((delay, i) => (
-      <motion.div
-        key={i}
-        className="w-2 h-8 bg-foreground/20 rounded-full blur-sm"
-        animate={{ y: [0, -40], opacity: [0, 0.5, 0], scaleX: [1, 1.5] }}
-        transition={{ duration: 2, delay, repeat: Infinity, ease: "easeOut" }}
-      />
-    ))}
-  </div>
-);
-
+import singleOrderImg from "@/assets/single-order.png";
+import duoOrderImg from "@/assets/duo-order.png";
+import bulkOrderImg from "@/assets/bulk-order.png";
 const bulkItems = [
   "Parties", "Corporate events", "Crypto meetups",
   "Birthdays", "DAO gatherings", "Street festivals",
@@ -40,16 +29,8 @@ const ProductShowcase = () => {
             transition={{ duration: 0.6 }}
             className="relative bg-card rounded-xl p-8 neon-border hover:glow-gold transition-all duration-500 group"
           >
-            <div className="relative w-full h-48 mb-6 rounded-lg bg-muted flex items-center justify-center overflow-hidden">
-              <SteamEffect />
-              <span className="text-6xl">🍳</span>
-              <motion.span
-                className="absolute bottom-2 right-2 text-3xl"
-                animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              >
-                🌶️
-              </motion.span>
+            <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden">
+              <img src={singleOrderImg} alt="Single order sisig" className="w-full h-full object-cover" />
             </div>
             <h3 className="font-display text-2xl font-bold text-fire mb-3">Single Order</h3>
             <p className="text-muted-foreground text-lg font-body">
@@ -65,16 +46,8 @@ const ProductShowcase = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="relative bg-card rounded-xl p-8 neon-border hover:glow-gold transition-all duration-500 group"
           >
-            <div className="relative w-full h-48 mb-6 rounded-lg bg-muted flex items-center justify-center overflow-hidden">
-              <SteamEffect />
-              <span className="text-6xl">🍳🍳</span>
-              <motion.span
-                className="absolute bottom-2 right-2 text-3xl"
-                animate={{ rotate: [0, 10, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                🤝
-              </motion.span>
+            <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden">
+              <img src={duoOrderImg} alt="Duo order sisig" className="w-full h-full object-cover" />
             </div>
             <h3 className="font-display text-2xl font-bold text-gold mb-3">Duo Order</h3>
             <p className="text-muted-foreground text-lg font-body">
@@ -90,9 +63,8 @@ const ProductShowcase = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="relative bg-card rounded-xl p-8 neon-border hover:glow-gold transition-all duration-500 group"
           >
-            <div className="relative w-full h-48 mb-6 rounded-lg bg-muted flex items-center justify-center overflow-hidden">
-              <SteamEffect />
-              <span className="text-6xl">📦</span>
+            <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden">
+              <img src={bulkOrderImg} alt="Bulk order sisig" className="w-full h-full object-cover" />
             </div>
             <h3 className="font-display text-2xl font-bold text-accent mb-3">Bulk Orders</h3>
             <p className="text-muted-foreground text-lg font-body mb-4">Ideal for:</p>
