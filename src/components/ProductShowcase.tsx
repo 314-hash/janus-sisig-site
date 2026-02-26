@@ -31,7 +31,7 @@ const ProductShowcase = () => {
           🍳 Our Sizzling Offerings
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Single Order Card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -57,12 +57,37 @@ const ProductShowcase = () => {
             </p>
           </motion.div>
 
+          {/* Duo Order Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="relative bg-card rounded-xl p-8 neon-border hover:glow-gold transition-all duration-500 group"
+          >
+            <div className="relative w-full h-48 mb-6 rounded-lg bg-muted flex items-center justify-center overflow-hidden">
+              <SteamEffect />
+              <span className="text-6xl">🍳🍳</span>
+              <motion.span
+                className="absolute bottom-2 right-2 text-3xl"
+                animate={{ rotate: [0, 10, -10, 0] }}
+                transition={{ duration: 2, repeat: Infinity }}
+              >
+                🤝
+              </motion.span>
+            </div>
+            <h3 className="font-display text-2xl font-bold text-gold mb-3">Duo Order</h3>
+            <p className="text-muted-foreground text-lg font-body">
+              Share the sizzle — perfect for date nights, bro meals, or partner grind sessions.
+            </p>
+          </motion.div>
+
           {/* Bulk Order Card */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="relative bg-card rounded-xl p-8 neon-border hover:glow-gold transition-all duration-500 group"
           >
             <div className="relative w-full h-48 mb-6 rounded-lg bg-muted flex items-center justify-center overflow-hidden">
