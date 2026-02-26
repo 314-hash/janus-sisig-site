@@ -43,30 +43,10 @@ const HeroSection = () => {
           />
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-display text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-4"
-        >
-          <span className="text-gold text-glow-gold">🔥 JANUS'</span>{" "}
-          <span className="text-fire text-glow-red">CRYPTO</span>{" "}
-          <span className="text-gold text-glow-gold">SISIG</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="font-display text-lg md:text-2xl text-accent tracking-widest mb-6"
-        >
-          Proof of Taste. Zero Gas Fees.
-        </motion.p>
-
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body"
         >
           From single cravings to bulk celebrations — we serve flavor at block-level scale.
@@ -75,7 +55,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <button className="px-8 py-4 bg-fire text-foreground font-display font-bold text-lg rounded-lg border-2 border-gold/50 glow-red hover:scale-105 hover:glow-gold transition-all duration-300 animate-pulse-glow">
