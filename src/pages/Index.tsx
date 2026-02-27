@@ -10,6 +10,7 @@ const Index = () => {
   return (
     <main className="relative min-h-screen bg-background overflow-x-hidden">
       <ScrollFrameBackground />
+      <div className="fixed inset-0 pointer-events-none bg-background/60" style={{ zIndex: 0 }} aria-hidden="true" />
       <div className="relative" style={{ zIndex: 1 }}>
         <HeroSection />
         <ProductShowcase />
