@@ -10,7 +10,7 @@ const bulkItems = [
 const ProductShowcase = () => {
   return (
     <section className="relative py-24 overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

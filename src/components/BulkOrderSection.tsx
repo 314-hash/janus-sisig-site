@@ -8,12 +8,13 @@ const features = [
 
 const BulkOrderSection = () => {
   return (
-    <section className="relative py-24">
-      <div className="container mx-auto px-4">
+    <section aria-labelledby="bulk-heading" className="relative py-24">
+      <div className="container mx-auto px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          id="bulk-heading"
           className="font-display text-3xl md:text-5xl font-bold text-center mb-4 text-gold text-glow-gold"
         >
           Scale Your Flavor Like a Blockchain.

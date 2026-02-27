@@ -14,7 +14,7 @@ const FloatingCoin = ({ delay, x, y }: { delay: number; x: string; y: string }) 
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <header role="banner" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated grid background */}
       <div className="absolute inset-0 grid-bg animate-grid-move opacity-40" />
       
@@ -66,7 +66,7 @@ const HeroSection = () => {
           </button>
         </motion.div>
       </div>
-    </section>
+    </header>
   );
 };
 

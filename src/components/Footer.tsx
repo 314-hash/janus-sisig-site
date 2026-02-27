@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="relative py-12 border-t border-emerald-light/30">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-8 text-center">
         <div className="flex justify-center gap-6 mb-6">
           {["𝕏", "📘", "📸", "💬"].map((icon, i) => (
             <a
