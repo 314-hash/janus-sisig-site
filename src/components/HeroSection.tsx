@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 grid-bg animate-grid-move opacity-40" />
       
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
 
       {/* Floating coins */}
       <FloatingCoin delay={0} x="10%" y="20%" />

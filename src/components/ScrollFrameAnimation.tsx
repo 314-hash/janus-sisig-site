@@ -120,7 +120,7 @@ const ScrollFrameBackground = () => {
       className="fixed inset-0 w-full h-full pointer-events-none"
       style={{ 
         zIndex: 0,
-        opacity: ready ? 0.45 : 0,
+        opacity: ready ? 1 : 0,
         transition: "opacity 1s ease-in-out",
       }}
     />
